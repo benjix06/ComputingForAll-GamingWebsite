@@ -145,7 +145,10 @@ main {
 
 /* Footer content */
 footer {
-	background-color: black;
+	background-color: #564343;
+	border-top: 5px solid #e05454;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
 footer div {
@@ -159,5 +162,27 @@ footer div {
 	color: white;
 	border: 2px solid white;
 	padding: 10px 60px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.Coppyright {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer-contact {
+	background-color: black;
+}
+
+.footer-contact ul {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.footer-contact ul li a {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: white;
 }
