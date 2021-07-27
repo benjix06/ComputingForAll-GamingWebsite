@@ -143,6 +143,12 @@ main {
 	border-bottom: 0;
 }
 
+.gamebox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /* Footer content */
 footer {
 	background-color: black;
