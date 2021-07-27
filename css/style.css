@@ -143,6 +143,18 @@ main {
 	border-bottom: 0;
 }
 
+.gamebox {
+	margin-top: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gamebox iframe {
+	border: 7px solid black;
+	border-radius: 20px;
+}
+
 /* Footer content */
 footer {
 	background-color: black;
