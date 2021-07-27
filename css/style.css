@@ -36,7 +36,7 @@ nav div {
 }
 
 nav div ul {
-	margin-right: 150px;
+	margin-right: 120px;
 }
 
 nav div ul li {
@@ -91,7 +91,7 @@ nav section .userInteraction li {
 	font-size: 12px;
 	border: 3px solid black;
 	border-radius: 20px;
-	width: auto;
+	transition: all 0.3s;
 }
 
 .register {
@@ -110,6 +110,18 @@ ul.userInteraction {
 
 nav section ul {
 	-webkit-text-stroke: 0.3px white;
+}
+
+.register:hover {
+	background-color: #70d260;
+	color: black;
+	-webkit-text-stroke: 0.3px black;
+}
+
+.Login:hover {
+	background-color: #848e82;
+	color: crimson;
+	-webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 
 main {
