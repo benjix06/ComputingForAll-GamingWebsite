@@ -151,6 +151,7 @@ main {
 .gamebox iframe {
 	border: 7px solid black;
 	border-radius: 20px;
+	margin-bottom: 20px;
 }
 
 .quote {
@@ -160,8 +161,9 @@ main {
 	border: 5px solid #40edaf;
 	background-color: #898080;
 	border-radius: 15px;
-	color: #5ee31f;
-	-webkit-text-stroke: 0.3px black;
+	color: rgb(13, 17, 15);
+	-webkit-text-stroke: 0.3px rgb(202, 54, 185);
+	font-style: italic;
 }
 
 .Importance {
@@ -178,6 +180,26 @@ main {
 	border-radius: 20px;
 	color: black;
 	-webkit-text-stroke: 0.1px #39e387;
+}
+
+.top-player {
+	margin-top: 20px;
+}
+
+.climate-resource {
+	display: flex;
+	justify-content: center;
+}
+
+.climate-resource ul {
+	border: 2px solid #e02626;
+	background-color: #0eadc3;
+	padding: 12px 45px;
+	border-radius: 20px;
+}
+
+.climate-resource ul li {
+	display: inline-block;
 }
 
 /* Footer content */
