@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style-login.css" />
+		<title>River Collection</title>
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav>
+			<label><a class="gameLogo" href="#gamebox">River Collection</a></label>
+
+			<div>
+				<ul>
+					<li><a class="Leader-Board" href="#">👑︁ Leader Board</a></li>
+					<li><a class="News" href="#">📰︁ News</a></li>
+					<li><a classs="Review" href="#">🌠︁︁ Review</a></li>
+					<li><a class="Hot" href="#">🔥︁ Hot</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Main content -->
+		<main>
+			<div>
+				<div class="login-interface">
+					<div class="user-box">
+						<div id="button"></div>
+						<button type="button" class="toggle-button" onclick="login()">
+							Login
+						</button>
+						<button type="button" class="toggle-button" onclick="register()">
+							Register
+						</button>
+					</div>
+
+					<form id="login" class="user-input">
+						<input
+							type="text"
+							class="input"
+							placeholder=" Enter username"
+							required
+						/>
+						<input
+							type="password"
+							class="input"
+							placeholder=" Enter Password "
+							required
+						/>
+
+						<input type="checkbox" class="check-box" /><span
+							>Remember Password</span
+						>
+						<button type="enter" class="enter-button">Login</button>
+					</form>
+
+					<form id="register" class="user-input">
+						<input
+							type="text"
+							class="input"
+							placeholder=" Enter username"
+							required
+						/>
+						<input
+							type="text"
+							class="input"
+							placeholder=" Enter Password "
+							required
+						/>
+						<input
+							type="text"
+							class="input"
+							placeholder=" Confirm Password "
+							required
+						/>
+						<input type="email" class="input" placeholder=" Email" required />
+
+						<button type="enter" class="enter-button">Register</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div>
+				<h2 class="gameLogo">River Collection</h2>
+			</div>
+			<div>
+				<h2 class="Thanks">Thanks for playing</h2>
+			</div>
+			<div>
+				<p class="Coppyright">
+					Coppyright 2021 | Benjamin Nguyen - Connor C-M | All rights reserved.
+				</p>
+			</div>
+			<div class="footer-contact">
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#gamebox">Home</a></li>
+				</ul>
+			</div>
+		</footer>
+		<script src="javascript/switchLogin.js"></script>
+	</body>
+</html>

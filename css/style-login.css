@@ -1,0 +1,222 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	text-decoration: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/the-ocean.jpg');
+	background-size: cover;
+}
+
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+nav {
+	background-color: #2f2727;
+	height: 80px;
+}
+
+.gameLogo {
+	color: white;
+	font-size: 40px;
+	line-height: 80px;
+	padding: 0 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px #11fef0;
+}
+
+nav div {
+	float: right;
+}
+
+nav div ul {
+	margin-right: 120px;
+}
+
+nav div ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav div ul li a {
+	color: white;
+	padding: 8px 20px;
+	margin: 20px;
+	border: 3px solid black;
+	transition: all 0.5s;
+}
+
+nav div ul li a:hover {
+	background-color: aqua;
+	color: black;
+	font-weight: bolder;
+}
+
+.News {
+	-webkit-text-stroke: 0.3px #17ee86;
+}
+
+.Review {
+	-webkit-text-stroke: 0.5px #1eeefd;
+}
+
+.Hot {
+	-webkit-text-stroke: 0.3px #db0d0d;
+}
+
+.Leader-Board {
+	-webkit-text-stroke: 0.3px #f662e7;
+}
+
+/* Main */
+main {
+	width: 100%;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #55e7de;
+	border: 2px solid black;
+	border-top: 0;
+}
+
+.login-interface {
+	width: 400px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background-color: #7bcbcb;
+	padding: 5px;
+	border-radius: 20px;
+	border: 3px solid black;
+	overflow: hidden;
+}
+
+.user-box {
+	width: 250px;
+	margin: 40px auto;
+	position: relative;
+	box-shadow: 6px 0 20px 9px rgb(210, 102, 198);
+	border-radius: 30px;
+}
+.toggle-button {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	font-size: 15px;
+	-webkit-text-stroke: 0.3px black;
+}
+#button {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 130px;
+	height: 100%;
+	background: linear-gradient(to right, #b47676, #6c53e9);
+	border-radius: 20px;
+	transition: 0.5s;
+}
+
+.user-input {
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transform: 0.5s;
+	margin-left: 45px;
+}
+
+.input {
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px;
+	border-bottom: 2px solid black;
+	outline: none;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 6px 0 20px 1px rgb(219, 103, 171);
+}
+.check-box {
+	margin-left: 15px;
+	margin-top: 20px;
+}
+span {
+	font-size: 15px;
+	margin: 5px;
+}
+
+.enter-button {
+	width: 85%;
+	padding: 15px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 10px;
+	background: linear-gradient(to right, #b47676, #6c53e9);
+	border: 0;
+	outline: none;
+	border-radius: 20px;
+	box-shadow: 6px 12px 20px 5px rgb(219, 103, 171);
+	margin-top: 30px;
+	margin-left: 35px;
+	font-weight: bold;
+}
+
+#login {
+	left: 0px;
+}
+#register {
+	left: 400px;
+}
+
+/* Footer content */
+footer {
+	background-color: #2f2727;
+	border-top: 5px solid #e05454;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+footer div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Thanks {
+	color: white;
+	border: 2px solid white;
+	padding: 10px 60px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.Coppyright {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer-contact {
+	background-color: black;
+	border-top: 1px solid white;
+}
+
+.footer-contact ul {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.footer-contact ul li a {
+	margin-left: 22px;
+	margin-right: 22px;
+	color: white;
+}
