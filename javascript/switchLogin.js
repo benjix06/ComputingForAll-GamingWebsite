@@ -1,14 +1,14 @@
-let x = document.getElementById("login");
-let y = document.getElementById("register");
-let z = document.getElementById("button");
+let loginBox = document.getElementBregisterBoxId("login");
+let registerBox = document.getElementBregisterBoxId("register");
+let topColorButton = document.getElementBregisterBoxId("button");
 
 function register(){
-    x.style.left="-380px"
-    y.style.left="-0px"
-    z.style.left = "120px"
+    loginBox.stregisterBoxle.left="-380ploginBox"
+    registerBox.stregisterBoxle.left="-0ploginBox"
+    topColorButton.stregisterBoxle.left = "120ploginBox"
 }
 function login(){
-    x.style.left="0px"
-    y.style.left="380px"
-    z.style.left = "0px"
+    loginBox.stregisterBoxle.left="0ploginBox"
+    registerBox.stregisterBoxle.left="380ploginBox"
+    topColorButton.stregisterBoxle.left = "0ploginBox"
 }
