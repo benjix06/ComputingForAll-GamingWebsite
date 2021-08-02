@@ -157,11 +157,11 @@ main {
 	font-size: 45px;
 }
 .leaderboardBox {
-	height: 1000px;
+	height: 1030px;
 	width: 963px;
 	position: relative;
 	margin: 10% auto;
-	background-color: #c1aac3;
+	background-color: #e58cb6;
 	padding: 5px;
 	border-radius: 40px;
 	border: 8px solid #bdff00;
@@ -170,7 +170,7 @@ main {
 .friends {
 	width: 110px;
 	height: 250px;
-	background-color: #c1aac3;
+	background-color: #74c08c;
 	border: 3px solid black;
 	position: absolute;
 	border-radius: 28px;
@@ -192,8 +192,8 @@ main {
 .global {
 	width: 110px;
 	height: 250px;
-	background-color: #c4c4c4;
-	border: 3px solid black;
+	background-color: #e58cb6;
+	border: 3px solid yellow;
 	position: absolute;
 	border-radius: 28px;
 	left: -55px;
@@ -212,7 +212,7 @@ main {
 }
 
 .friends:hover {
-	background-color: #b969c0;
+	background-color: orange;
 }
 
 .global:hover {
@@ -222,7 +222,7 @@ main {
 .leaderboard-items {
 	width: 550px;
 	height: 50px;
-	background-color: #c1aac3;
+	background-color: #e58cb6;
 	position: relative;
 	margin: auto;
 	top: 120px;
@@ -251,23 +251,29 @@ main {
 
 .topPlayerBox {
 	width: 795px;
-	height: 800px;
-	background-color: #98859a;
+	height: 838px;
+	background-color: #b85087;
 	position: relative;
 	margin: auto;
 	top: 110px;
 	border-radius: 40px;
+	border: 3px solid yellow;
+}
+
+#row img {
+	height: 45px;
+	width: auto;
 }
 
 #row {
 	width: 750px;
 	height: 50px;
-	background-color: #c1aac3;
+	background-color: #e58cb6;
 	position: relative;
 	margin: 12px auto;
-	top: 25px;
+	top: 5px;
 	border-radius: 50px;
-	border: 1px solid black;
+	border: 3px solid rgb(255, 208, 0);
 }
 #row > div {
 	display: grid;
