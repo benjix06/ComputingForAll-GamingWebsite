@@ -46,6 +46,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: nowrap;
 }
 
 nav ul li {
@@ -150,7 +151,7 @@ main {
 	margin: 12% auto;
 	background-color: rgb(78, 59, 65);
 	border: 2px solid yellow;
-	border-radius: 2%;
+	border-radius: 20px;
 }
 
 #about-us-title {

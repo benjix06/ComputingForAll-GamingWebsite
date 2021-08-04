@@ -145,12 +145,12 @@ main {
 }
 
 .about-us {
-	width: 60em;
+	width: 70em;
 	height: auto;
 	margin: 12% auto;
 	background-color: rgb(78, 59, 65);
 	border: 2px solid yellow;
-	border-radius: 2%;
+	border-radius: 20px;
 }
 
 #about-us-title {
@@ -187,6 +187,24 @@ main {
 
 .about-us-box ul {
 	list-style-type: none;
+}
+
+.items-container {
+	display: grid;
+	grid-template-columns: 0.3fr 1fr;
+}
+
+.items {
+	height: 70%;
+	width: auto;
+}
+
+.items-name {
+	position: relative;
+	top: 15%;
+	right: 10%;
+	color: white;
+	font-size: 0.8em;
 }
 
 /* Footer content */

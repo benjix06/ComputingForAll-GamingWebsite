@@ -240,19 +240,23 @@ main {
 
 #rank {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #29d46d;
+	color: #29d46d;
+	text-shadow: 1px 1px 1px black;
 }
 #name {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #11fef0;
+	color: #11fef0;
+	text-shadow: 1px 1.5px 1px black;
 }
 #level {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #dfff18;
+	color: #dfff18;
+	text-shadow: 1px 1px 1px black;
 }
 #scores {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #ffffff;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px black;
 }
 
 .topPlayerBox {
@@ -293,6 +297,7 @@ main {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	font-size: 1.1em;
 }
 /* Footer content */
 footer {
