@@ -41,9 +41,10 @@ nav {
 }
 
 .top-items {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
 	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 nav ul li {
@@ -54,9 +55,10 @@ nav ul li {
 
 nav ul li a {
 	color: white;
-	padding: 8px 20px;
-	border: 3px solid black;
+	padding: 0.7em 1em;
+	border: 0.2em solid black;
 	transition: all 0.5s;
+	font-size: 92%;
 }
 
 .top-items li a:hover {
@@ -67,6 +69,10 @@ nav ul li a {
 
 .News {
 	-webkit-text-stroke: 0.3px #17ee86;
+}
+
+#News:hover {
+	-webkit-text-stroke: 0.1px #9451f3;
 }
 
 .Review {
