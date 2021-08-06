@@ -59,6 +59,7 @@ nav ul li a {
 	padding: 0.7em 1em;
 	border: 0.2em solid black;
 	transition: all 0.5s;
+	box-shadow: 1px 1px 8px whitesmoke;
 	font-size: 92%;
 }
 
@@ -69,21 +70,20 @@ nav ul li a {
 }
 
 .News {
+	box-shadow: 1px 1px 8px #17ee86;
 	-webkit-text-stroke: 0.3px #17ee86;
 }
 #News:hover {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
 
-.Review {
-	-webkit-text-stroke: 0.5px #1eeefd;
-}
-
 .Hot {
+	box-shadow: 1px 1px 8px #db0d0d;
 	-webkit-text-stroke: 0.3px #db0d0d;
 }
 
 .Leader-Board {
+	box-shadow: 1px 1px 8px #f662e7;
 	-webkit-text-stroke: 0.3px #f662e7;
 }
 
@@ -104,11 +104,13 @@ nav section .userInteraction li {
 
 .register {
 	background-color: #218012;
+	box-shadow: 1px 1px 5px black;
 	padding: 0px 20px;
 }
 
 .Login {
 	background-color: #697d65;
+	box-shadow: 1px 1px 5px black;
 	padding: 0px 30px;
 }
 
@@ -160,6 +162,7 @@ main {
 	border: 5px solid rgb(88, 88, 88);
 	display: grid;
 	grid-template-columns: 0.5fr 2fr;
+	box-shadow: 1px 1px 20px black;
 }
 
 .paragraph a {
@@ -192,10 +195,15 @@ main {
 	border-radius: 40px;
 	background-color: #11fef0;
 	padding: 8px;
+	box-shadow: 1px 1px 10px black;
 }
 
 .climatetitle h1 {
 	margin: 0.8% auto;
+}
+
+.image-hover:hover {
+	opacity: 0.8;
 }
 
 /* Footer content */

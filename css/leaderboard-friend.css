@@ -60,6 +60,7 @@ nav ul li a {
 	border: 0.2em solid black;
 	transition: all 0.5s;
 	font-size: 92%;
+	box-shadow: 1px 1px 8px whitesmoke;
 }
 
 .top-items li a:hover {
@@ -69,21 +70,20 @@ nav ul li a {
 }
 
 .News {
+	box-shadow: 1px 1px 8px #17ee86;
 	-webkit-text-stroke: 0.3px #17ee86;
 }
 #News:hover {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
 
-.Review {
-	-webkit-text-stroke: 0.5px #1eeefd;
-}
-
 .Hot {
+	box-shadow: 1px 1px 8px #db0d0d;
 	-webkit-text-stroke: 0.3px #db0d0d;
 }
 
 .Leader-Board {
+	box-shadow: 1px 1px 8px #f662e7;
 	-webkit-text-stroke: 0.3px #f662e7;
 }
 
@@ -104,11 +104,13 @@ nav section .userInteraction li {
 
 .register {
 	background-color: #218012;
+	box-shadow: 1px 1px 5px black;
 	padding: 0px 20px;
 }
 
 .Login {
 	background-color: #697d65;
+	box-shadow: 1px 1px 5px black;
 	padding: 0px 30px;
 }
 
@@ -160,16 +162,18 @@ main {
 	background-color: #ef85f9;
 	-webkit-text-stroke: 2px #000000;
 	font-size: 45px;
+	box-shadow: 1px 1px 10px black;
 }
 .leaderboardBox {
 	height: 700px;
 	width: 963px;
 	position: relative;
-	margin: 10% auto;
+	margin: 10% 200px;
 	background-color: #e58cb6;
 	padding: 5px;
 	border-radius: 40px;
 	border: 8px solid #bdff00;
+	box-shadow: 1px 2px 10px black;
 }
 
 .friends {
@@ -187,6 +191,7 @@ main {
 	justify-content: center;
 	font-size: 40px;
 	transition: 0.5s;
+	box-shadow: 1px 1px 5px yellow;
 }
 .friends a {
 	color: black;
@@ -209,6 +214,7 @@ main {
 	justify-content: center;
 	font-size: 40px;
 	transition: 0.5s;
+	box-shadow: 1px 1px 5px black;
 }
 
 .global a {
@@ -239,19 +245,23 @@ main {
 
 #rank {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #29d46d;
+	color: #29d46d;
+	text-shadow: 1px 1px 1px black;
 }
 #name {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #11fef0;
+	color: #11fef0;
+	text-shadow: 1px 1.5px 1px black;
 }
 #level {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #dfff18;
+	color: #dfff18;
+	text-shadow: 1px 1px 1px black;
 }
 #scores {
 	font-weight: bold;
-	-webkit-text-stroke: 0.1px #ffffff;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px black;
 }
 
 .topPlayerBox {
@@ -292,6 +302,7 @@ main {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	font-size: 1.1em;
 }
 /* Footer content */
 footer {

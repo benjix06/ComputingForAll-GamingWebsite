@@ -59,6 +59,7 @@ nav ul li a {
 	padding: 0.7em 1em;
 	border: 0.2em solid black;
 	transition: all 0.5s;
+	box-shadow: 1px 1px 8px whitesmoke;
 	font-size: 92%;
 }
 
@@ -69,21 +70,20 @@ nav ul li a {
 }
 
 .News {
+	box-shadow: 1px 1px 8px #17ee86;
 	-webkit-text-stroke: 0.3px #17ee86;
 }
 #News:hover {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
 
-.Review {
-	-webkit-text-stroke: 0.5px #1eeefd;
-}
-
 .Hot {
+	box-shadow: 1px 1px 8px #db0d0d;
 	-webkit-text-stroke: 0.3px #db0d0d;
 }
 
 .Leader-Board {
+	box-shadow: 1px 1px 8px #f662e7;
 	-webkit-text-stroke: 0.3px #f662e7;
 }
 
@@ -104,11 +104,13 @@ nav section .userInteraction li {
 
 .register {
 	background-color: #218012;
+	box-shadow: 1px 1px 5px black;
 	padding: 0px 20px;
 }
 
 .Login {
 	background-color: #697d65;
+	box-shadow: 1px 1px 5px black;
 	padding: 0px 30px;
 }
 
@@ -132,6 +134,10 @@ nav section ul {
 	-webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 
+.image-hover:hover {
+	opacity: 0.6;
+}
+
 /* Main content */
 main {
 	width: 100%;
@@ -145,12 +151,13 @@ main {
 }
 
 .about-us {
-	width: 60em;
+	width: 70em;
 	height: auto;
-	margin: 12% auto;
+	margin: 12% 145px;
 	background-color: rgb(78, 59, 65);
 	border: 2px solid yellow;
-	border-radius: 2%;
+	border-radius: 20px;
+	box-shadow: 1px 1px 10px black;
 }
 
 #about-us-title {
@@ -187,6 +194,24 @@ main {
 
 .about-us-box ul {
 	list-style-type: none;
+}
+
+.items-container {
+	display: grid;
+	grid-template-columns: 0.3fr 1fr;
+}
+
+.items {
+	height: 70%;
+	width: auto;
+}
+
+.items-name {
+	position: relative;
+	top: 15%;
+	right: 10%;
+	color: white;
+	font-size: 0.8em;
 }
 
 /* Footer content */
