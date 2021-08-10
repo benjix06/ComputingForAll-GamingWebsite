@@ -190,7 +190,7 @@ main {
 	margin: 2% auto;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	border-radius: 2%;
+	border-radius: 5%;
 	border-bottom-left-radius: 8%;
 	border-bottom-right-radius: 8%;
 	overflow: hidden;
@@ -199,12 +199,12 @@ main {
 
 .hot-container2-item1 {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 .hot-container2-item2 {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 .hot-container2 img {
@@ -217,7 +217,7 @@ main {
 }
 
 .paragraph {
-	padding: 3%;
+	padding: 5%;
 }
 
 .paragraph > * {
