@@ -39,6 +39,8 @@ nav {
 	grid-template-columns: 5fr 8fr 1fr;
 	height: 100%;
 	background-color: #2f2727;
+	position: relative;
+	z-index: 1;
 }
 
 .top-items {
@@ -46,6 +48,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: nowrap;
 }
 
 nav ul li {
@@ -60,6 +63,7 @@ nav ul li a {
 	border: 0.2em solid black;
 	transition: all 0.5s;
 	font-size: 92%;
+	box-shadow: 1px 1px 8px whitesmoke;
 }
 
 .top-items li a:hover {
@@ -70,22 +74,20 @@ nav ul li a {
 
 .News {
 	-webkit-text-stroke: 0.3px #17ee86;
+	box-shadow: 1px 1px 8px #17ee86;
 }
-
 #News:hover {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
 
-.Review {
-	-webkit-text-stroke: 0.5px #1eeefd;
-}
-
 .Hot {
 	-webkit-text-stroke: 0.3px #db0d0d;
+	box-shadow: 1px 1px 8px #db0d0d;
 }
 
 .Leader-Board {
 	-webkit-text-stroke: 0.3px #f662e7;
+	box-shadow: 1px 1px 8px #f662e7;
 }
 
 nav section .userInteraction li {
@@ -106,11 +108,13 @@ nav section .userInteraction li {
 .register {
 	background-color: #218012;
 	padding: 0px 20px;
+	box-shadow: 1px 1px 5px black;
 }
 
 .Login {
 	background-color: #697d65;
 	padding: 0px 30px;
+	box-shadow: 1px 1px 5px black;
 }
 
 ul.userInteraction {
@@ -154,6 +158,7 @@ main {
 	border: 7px solid black;
 	border-radius: 20px;
 	margin-bottom: 20px;
+	box-shadow: 1px 1px 25px green;
 }
 
 .quote {
@@ -166,13 +171,14 @@ main {
 	color: rgb(13, 17, 15);
 	-webkit-text-stroke: 0.3px rgb(202, 54, 185);
 	font-style: italic;
+	box-shadow: 1px 1px 10px black;
 }
 
 .Importance {
 	display: inline-block;
 	width: 480px;
 	height: auto;
-	margin-left: 100px;
+	margin-left: 5em;
 }
 
 .Importance p {
@@ -183,6 +189,29 @@ main {
 	color: black;
 	-webkit-text-stroke: 0.1px #39e387;
 	margin-bottom: 50px;
+	box-shadow: 1px 1px 5px black;
+}
+
+.Importance p::first-letter {
+	font-size: 200%;
+}
+
+.quote-container {
+	margin: 0 auto;
+	animation-name: quote-container;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	transform: translateY(0);
+}
+
+@keyframes quote-container {
+	from {
+		transform: translateY(-300px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
 }
 
 /* Footer content */

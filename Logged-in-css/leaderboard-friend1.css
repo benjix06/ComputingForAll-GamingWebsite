@@ -59,8 +59,8 @@ nav ul li a {
 	padding: 0.7em 1em;
 	border: 0.2em solid black;
 	transition: all 0.5s;
-	box-shadow: 1px 1px 8px whitesmoke;
 	font-size: 92%;
+	box-shadow: 1px 1px 8px whitesmoke;
 }
 
 .top-items li a:hover {
@@ -73,7 +73,6 @@ nav ul li a {
 	box-shadow: 1px 1px 8px #17ee86;
 	-webkit-text-stroke: 0.3px #17ee86;
 }
-
 #News:hover {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
@@ -88,52 +87,28 @@ nav ul li a {
 	-webkit-text-stroke: 0.3px #f662e7;
 }
 
-nav section .userInteraction li {
+nav section {
+	width: 200px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	line-height: 30px;
 	margin-right: 15px;
-}
-
-.userInteraction li a {
 	color: white;
-	font-size: 12px;
-	border: 3px solid black;
-	border-radius: 20px;
-	transition: all 0.3s;
+	text-shadow: 1px 1px 10px yellow;
 }
 
-.register {
-	background-color: #218012;
-	-webkit-text-stroke: 0.3px white;
-	padding: 0px 20px;
-	box-shadow: 1px 1px 5px black;
+nav section a {
+	color: #f662e7;
+	border: 1px solid white;
+	padding: 0 3%;
+	background-color: black;
+	transition: all 0.5s;
 }
-
-.Login {
-	background-color: #697d65;
-	padding: 0px 30px;
-	box-shadow: 1px 1px 5px black;
-}
-
-ul.userInteraction {
-	margin: 5px;
-}
-
-nav section ul {
-	-webkit-text-stroke: 0.3px white;
-}
-
-.register:hover {
-	background-color: #70d260;
-	color: black;
-	-webkit-text-stroke: 0.3px black;
-}
-
-.Login:hover {
-	background-color: #b6c0b4;
-	color: crimson;
-	-webkit-text-stroke: 0.5px rgb(0, 0, 0);
+nav section a:hover {
+	background-color: #8e1d98;
+	color: white;
 }
 
 /* Main Content */
@@ -167,7 +142,7 @@ main {
 	box-shadow: 1px 1px 10px black;
 }
 .leaderboardBox {
-	height: 1030px;
+	height: 700px;
 	width: 963px;
 	position: relative;
 	margin: 10% 200px;
@@ -181,8 +156,8 @@ main {
 .friends {
 	width: 110px;
 	height: 250px;
-	background-color: #74c08c;
-	border: 3px solid black;
+	background-color: #e58cb6;
+	border: 3px solid yellow;
 	position: absolute;
 	border-radius: 28px;
 	left: -55px;
@@ -193,7 +168,7 @@ main {
 	justify-content: center;
 	font-size: 40px;
 	transition: 0.5s;
-	box-shadow: 1px 1px 5px black;
+	box-shadow: 1px 1px 5px yellow;
 }
 .friends a {
 	color: black;
@@ -204,8 +179,8 @@ main {
 .global {
 	width: 110px;
 	height: 250px;
-	background-color: #e58cb6;
-	border: 3px solid yellow;
+	background-color: #74c08c;
+	border: 3px solid black;
 	position: absolute;
 	border-radius: 28px;
 	left: -55px;
@@ -216,7 +191,7 @@ main {
 	justify-content: center;
 	font-size: 40px;
 	transition: 0.5s;
-	box-shadow: 1px 1px 5px yellow;
+	box-shadow: 1px 1px 5px black;
 }
 
 .global a {
@@ -225,11 +200,11 @@ main {
 }
 
 .friends:hover {
-	background-color: orange;
+	background-color: #cf6868;
 }
 
 .global:hover {
-	background-color: #cf6868;
+	background-color: orange;
 }
 
 .leaderboard-items {
@@ -268,7 +243,7 @@ main {
 
 .topPlayerBox {
 	width: 795px;
-	height: 838px;
+	height: 360px;
 	background-color: #b85087;
 	position: relative;
 	margin: auto;

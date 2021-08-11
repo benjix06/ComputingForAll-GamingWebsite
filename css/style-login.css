@@ -58,6 +58,7 @@ nav ul li a {
 	padding: 0.7em 1em;
 	border: 0.2em solid black;
 	transition: all 0.5s;
+	box-shadow: 1px 1px 8px whitesmoke;
 	font-size: 92%;
 }
 
@@ -68,6 +69,7 @@ nav ul li a {
 }
 
 .News {
+	box-shadow: 1px 1px 8px #17ee86;
 	-webkit-text-stroke: 0.3px #17ee86;
 }
 
@@ -75,15 +77,13 @@ nav ul li a {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
 
-.Review {
-	-webkit-text-stroke: 0.5px #1eeefd;
-}
-
 .Hot {
+	box-shadow: 1px 1px 8px #db0d0d;
 	-webkit-text-stroke: 0.3px #db0d0d;
 }
 
 .Leader-Board {
+	box-shadow: 1px 1px 8px #f662e7;
 	-webkit-text-stroke: 0.3px #f662e7;
 }
 
@@ -147,10 +147,11 @@ main {
 	width: 400px;
 	height: 480px;
 	position: relative;
-	margin: 6% auto;
+	margin: 6% 350px;
 	background-color: #7bcbcb;
 	padding: 5px;
 	border-radius: 20px;
+	box-shadow: 1px 1px 20px green;
 	border: 3px solid black;
 	overflow: hidden;
 }
@@ -205,7 +206,7 @@ main {
 	margin-left: 15px;
 	margin-top: 20px;
 }
-span {
+label {
 	font-size: 15px;
 	margin: 5px;
 }
