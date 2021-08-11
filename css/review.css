@@ -59,6 +59,7 @@ nav ul li a {
 	padding: 0.7em 1em;
 	border: 0.2em solid black;
 	transition: all 0.5s;
+	box-shadow: 1px 1px 8px whitesmoke;
 	font-size: 92%;
 }
 
@@ -69,21 +70,21 @@ nav ul li a {
 }
 
 .News {
+	box-shadow: 1px 1px 8px #17ee86;
 	-webkit-text-stroke: 0.3px #17ee86;
 }
+
 #News:hover {
 	-webkit-text-stroke: 0.1px #9451f3;
 }
 
-.Review {
-	-webkit-text-stroke: 0.5px #1eeefd;
-}
-
 .Hot {
+	box-shadow: 1px 1px 8px #db0d0d;
 	-webkit-text-stroke: 0.3px #db0d0d;
 }
 
 .Leader-Board {
+	box-shadow: 1px 1px 8px #f662e7;
 	-webkit-text-stroke: 0.3px #f662e7;
 }
 
@@ -104,12 +105,15 @@ nav section .userInteraction li {
 
 .register {
 	background-color: #218012;
+	-webkit-text-stroke: 0.3px white;
 	padding: 0px 20px;
+	box-shadow: 1px 1px 5px black;
 }
 
 .Login {
 	background-color: #697d65;
 	padding: 0px 30px;
+	box-shadow: 1px 1px 5px black;
 }
 
 ul.userInteraction {
@@ -145,31 +149,34 @@ main {
 }
 
 div.reviewtitle {
-    width: 8em;
+    width: 18em;
     display: flex;
     justify-content: center;
-    background-color: gray;
-    border-radius: 5%;
+	padding: 10px;
+    background-color: #11fef0;
+    border-radius: 50px;
     border: 5px solid black;
     font-size: 1.3em;
-    color: #11feee98;
+    color: black;
     margin: 1% auto;
+	box-shadow: 1px 1px 10px black;
 }
 
 .reviewbox {
     margin: 2% auto;
     background-color: gray;
     border: 5px solid black;
-    border-radius: 10%;
+    border-radius: 25px;
     width: 1000px;
     height: 600px;
 	padding: 5%;
+	box-shadow: 1px 1px 20px black;
 }
 
 .reviewcontainer {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-gap: 10px;
+	grid-gap: 20px;
 	text-align: center;
 	position: relative;
 	top: 50%;
@@ -185,10 +192,12 @@ div.reviewtitle {
 	border: 2px solid black;
 	border-radius: 100px;
 	overflow: hidden;
+	box-shadow: 5px 5px 10px black;
 }
 
 .reviewtext {
 	background-color: white;
+	padding: 10px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 }
@@ -218,6 +227,7 @@ div.reviewtitle {
 	display: grid;
 	grid-template-columns: 1fr 0.14fr;
 	overflow: hidden;
+	box-shadow: 5px 5px 10px black;
 }
 
 .replyavatar {
