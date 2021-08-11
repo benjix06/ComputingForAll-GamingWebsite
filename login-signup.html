@@ -46,18 +46,22 @@
 							class="input"
 							placeholder=" Enter username"
 							required
+							id="UserName"
 						/>
 						<input
 							type="password"
 							class="input"
 							placeholder=" Enter Password "
 							required
+							id="passWord"
 						/>
 
 						<input type="checkbox" class="check-box" /><label for="check-box"
 							>Remember Password</label
 						>
-						<button type="enter" class="enter-button">Login</button>
+						<button type="button" class="enter-button" onclick="check()">
+							Login
+						</button>
 					</form>
 
 					<form id="register" class="user-input">
@@ -66,22 +70,33 @@
 							class="input"
 							placeholder=" Enter username"
 							required
+							id="username"
 						/>
 						<input
 							type="text"
 							class="input"
 							placeholder=" Enter Password "
 							required
+							id="password"
 						/>
 						<input
 							type="text"
 							class="input"
 							placeholder=" Confirm Password "
 							required
+							id="confirmpassword"
 						/>
-						<input type="email" class="input" placeholder=" Email" required />
+						<input
+							type="email"
+							class="input"
+							placeholder=" Email"
+							required
+							id="email"
+						/>
 
-						<button type="enter" class="enter-button">Register</button>
+						<button type="button" class="enter-button" onclick="getInfo()">
+							Register
+						</button>
 					</form>
 				</div>
 			</div>
