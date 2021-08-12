@@ -93,5 +93,8 @@ function check(){
             alert("Only the chosen one can log in!\n But maybe try:\n usernam: prettyR\n password: handsomeNoDoubt");
         }
     }
-
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("user").innerHTML = "test"
+});
