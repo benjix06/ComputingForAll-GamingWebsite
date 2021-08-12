@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+* {
+	margin: 0%;
+	padding: 0%;
+	text-decoration: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/the-ocean.jpg');
+	background-size: cover;
+}
+img {
+	width: 100%;
+	margin-bottom: -4px;
+}
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	font-family: 'Lexend', Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGATION STYLES */
+
+.gameLogo {
+	color: white;
+	font-size: 40px;
+	line-height: 80px;
+	padding: 0 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px #11fef0;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 5fr 8fr 1fr;
+	height: 100%;
+	background-color: #2f2727;
+}
+
+.top-items {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+nav ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav ul li a {
+	color: white;
+	padding: 0.7em 1em;
+	border: 0.2em solid black;
+	transition: all 0.5s;
+	box-shadow: 1px 1px 8px whitesmoke;
+	font-size: 92%;
+}
+
+.top-items li a:hover {
+	background-color: aqua;
+	color: black;
+	font-weight: bolder;
+}
+
+.News {
+	box-shadow: 1px 1px 8px #17ee86;
+	-webkit-text-stroke: 0.3px #17ee86;
+}
+
+#News:hover {
+	-webkit-text-stroke: 0.1px #9451f3;
+}
+
+.Hot {
+	box-shadow: 1px 1px 8px #db0d0d;
+	-webkit-text-stroke: 0.3px #db0d0d;
+}
+
+.Leader-Board {
+	box-shadow: 1px 1px 8px #f662e7;
+	-webkit-text-stroke: 0.3px #f662e7;
+}
+
+nav section {
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 30px;
+	margin-right: 15px;
+	color: white;
+	text-shadow: 1px 1px 10px yellow;
+}
+
+nav section a {
+	color: #f662e7;
+	border: 1px solid white;
+	padding: 0 3%;
+	background-color: black;
+	transition: all 0.5s;
+}
+
+nav section a:hover {
+	background-color: #8e1d98;
+	color: white;
+}
+
+/* Main content */
+main {
+	width: 100%;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(85, 231, 222, 0.8);
+	border: 2px solid black;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+div.reviewtitle {
+	width: 18em;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	background-color: #11fef0;
+	border-radius: 50px;
+	border: 5px solid black;
+	font-size: 1.3em;
+	color: black;
+	margin: 1% auto;
+	box-shadow: 1px 1px 10px black;
+}
+
+.reviewbox {
+	margin: 2% auto;
+	background-color: gray;
+	border: 5px solid black;
+	border-radius: 25px;
+	width: 1000px;
+	height: 600px;
+	padding: 5%;
+	box-shadow: 1px 1px 20px black;
+}
+
+.reviewcontainer {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.review {
+	height: auto;
+	width: 100%;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: 1fr 0.14fr;
+	border: 2px solid black;
+	border-radius: 100px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px black;
+}
+
+.reviewtext {
+	background-color: white;
+	padding: 10px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.reviewcontents {
+	background-color: white;
+	border-top-right-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+
+.avatar {
+	border-radius: 100%;
+	background-color: cadetblue;
+	height: 100%;
+	width: 100%;
+}
+
+.reply {
+	height: 90px;
+	width: 75%;
+	margin: 0px 0px 0px auto;
+	background-color: white;
+	border: 2px solid black;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	border-radius: 100px;
+	display: grid;
+	grid-template-columns: 1fr 0.14fr;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px black;
+}
+
+.replyavatar {
+	border-radius: 90px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: cadetblue;
+	height: 100%;
+	width: 100%;
+}
+
+.input {
+	width: 99.5%;
+	height: 100%;
+}
+
+/* Footer content */
+footer {
+	background-color: #2f2727;
+	border-top: 5px solid #e05454;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+footer div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Thanks {
+	color: white;
+	border: 2px solid white;
+	padding: 10px 60px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.Coppyright {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer-contact {
+	background-color: black;
+	border-top: 1px solid white;
+}
+
+.footer-contact ul {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.footer-contact ul li a {
+	margin-left: 22px;
+	margin-right: 22px;
+	color: white;
+}
