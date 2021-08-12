@@ -17,6 +17,8 @@ let storage = window.localStorage.users;
 
 let usersArr;
 
+let userName_login = "";
+
 if (storage === undefined) {
     usersArr = [];
     window.localStorage.setItem('users', JSON.stringify(usersArr));
@@ -80,7 +82,11 @@ function check(){
         for(let i = 0; i < usersArr.length;i++){
             if (JSON.stringify(usersArr[i]) === JSON.stringify(checkUser)){
                 console.log("Logged in");
+                userName_login = usersArr[i].userName;
                 window.location.href = "./Logged-in-html/index1.html";
+
+                document.getElementById("user").innerHTML = userName_login;
+                
                 flag = true;
             }
             else if(usersArr[i].userName === checkUser.userName && usersArr[i].password != checkUser.password){
@@ -95,6 +101,6 @@ function check(){
     }
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("user").innerHTML = "test"
-});
+// document.addEventListener("DOMContentLoaded", function(){
+//     document.getElementById("user").innerHTML = userName_login
+// });
