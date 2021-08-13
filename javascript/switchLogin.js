@@ -83,6 +83,7 @@ function check(){
     
     var passWord = document.getElementById("passWord").value;
     var userName = document.getElementById("UserName").value;
+    let flag = false;
 
     let checkUser = {
         userName: userName,
