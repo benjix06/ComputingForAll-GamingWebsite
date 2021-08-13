@@ -13,6 +13,9 @@ function login(){
     topColorButton.style.left = "0px"
 } 
 
+// Check the user when they click the register button.
+
+
 let storage = window.localStorage.users;
 
 let usersArr;
@@ -66,7 +69,7 @@ function getInfo(){
                 window.localStorage.setItem('users', JSON.stringify(usersArr));
     
                 console.log("Created the account!");
-                alert("Successfully Sign up!");
+                alert("Successfully Signed up!");
             } else {
                 console.log("Account with that user name already exists");
                 alert("Account with that user name already exists!");
@@ -130,5 +133,10 @@ function check(){
 
 // Added event listener to change the name.
 document.addEventListener("DOMContentLoaded", function(){
+    let params = new URLSearchParams(document.location.search.substring(1));
+    let click = params.get("click");
+    if(click === "register"){
+        register();
+    }
     document.getElementById("user").innerHTML = window.localStorage.getItem("loggedinUser");
 });
