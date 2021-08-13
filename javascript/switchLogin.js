@@ -17,11 +17,11 @@ let storage = window.localStorage.users;
 
 let usersArr;
 
-let userName_login = "";
 
 if (storage === undefined) {
     usersArr = [];
     window.localStorage.setItem('users', JSON.stringify(usersArr));
+    window.localStorage.setItem('loggedinUser', "");
 } else {
     usersArr = JSON.parse(storage);
 }
@@ -33,28 +33,48 @@ function getInfo(){
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmpassword").value;
     let email = document.getElementById("email").value;
+    
+    // Regular expression to check the user input
+    let checkUserName = /[a-zA-Z\d]{4,12}/g;
+    let checkEmail = /[a-z0-9\.\_\%\+\-]+@[a-z0-9\.\-]+\.[a-z]{2,4}/g;
+    // let passWordCheck = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[\!\@\#\$\%\^\&\*\(\)\-\_\=\+]).{6,16}$/g;
+    let passWordCheck = /[a-zA-Z\d]{4,12}/g;
 
 
-    if(password === confirmPassword){
-        console.log("Password matched!");
-        let newUser = {
-            userName: userName,
-            password: confirmPassword
+    // Give the user alert the input is not qualified
+    if(!(userName).match(checkUserName) || !(email).match(checkEmail) || !(password).match(passWordCheck)){
+        alert("Invalid account!\n\nUsername - Password: must have at least 4 characters and the maximum is 12 characters\nEmail: the range after . is from 2 - 4 characters");
+        console.log((userName).match(checkUserName));
+        console.log((email).match(checkEmail));
+        console.log((password).match(passWordCheck));
+    }
+
+
+    // Otherwise start checking and adding to the local storage.
+    else if(JSON.stringify(userName).match(checkUserName) && JSON.stringify(email).match(checkEmail) && JSON.stringify(password).match(passWordCheck)){
+        if(password === confirmPassword){
+            console.log("Password matched!");
+            let newUser = {
+                userName: userName,
+                password: confirmPassword
+            }
+    
+            let checkArr = JSON.stringify(usersArr);
+            
+            if(!checkArr.includes(userName)) {
+                usersArr.push(newUser);
+                window.localStorage.setItem('users', JSON.stringify(usersArr));
+    
+                console.log("Created the account!");
+                alert("Successfully Sign up!");
+            } else {
+                console.log("Account with that user name already exists");
+                alert("Account with that user name already exists!");
+            }
         }
-
-        let checkArr = JSON.stringify(usersArr);
-        
-        if(!checkArr.includes(userName)) {
-            usersArr.push(newUser);
-            window.localStorage.setItem('users', JSON.stringify(usersArr));
-
-            console.log("Created the account!");
-            alert("Successfully Sign up!");
-        } else {
-            console.log("Account with that user name already exists");
-            alert("Account with that user name already exists!");
+        else if(password != confirmPassword){
+            alert("Password do not match!");
         }
-
     }
 
 }
@@ -64,36 +84,42 @@ function check(){
     var passWord = document.getElementById("passWord").value;
     var userName = document.getElementById("UserName").value;
 
-
-    let flag = false;
-
     let checkUser = {
         userName: userName,
         password: passWord
     }
 
+    // Check if the input is from the given account
     if(passWord === "handsomeNoDoubt" && userName === "prettyR"){
         console.log("Logged in");
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
         flag = true;
     }
 
+    // Otherwise check if the user account exists in the local storage
     else if(window.localStorage.users){
-        for(let i = 0; i < usersArr.length;i++){
-            if (JSON.stringify(usersArr[i]) === JSON.stringify(checkUser)){
-                console.log("Logged in");
-                userName_login = usersArr[i].userName;
-                window.location.href = "./Logged-in-html/index1.html";
 
-                document.getElementById("user").innerHTML = userName_login;
-                
+        // Loop through the array
+        for(let i = 0; i < usersArr.length;i++){
+
+            // If found, go to the main page
+            if (JSON.stringify(usersArr[i]) === JSON.stringify(checkUser)){
+
+                console.log("Logged in");
+                window.localStorage.setItem("loggedinUser", usersArr[i].userName);
+                window.location.href = "./Logged-in-html/index1.html";
                 flag = true;
+
             }
+
+            // If found but wrong password, give the alert
             else if(usersArr[i].userName === checkUser.userName && usersArr[i].password != checkUser.password){
                 alert("Incorrect Password!");
                 flag = true;
             }
         }
+
+        // If the account is not exists, give an account for user
         if(flag === false){
             console.log("failed");
             alert("Only the chosen one can log in!\n But maybe try:\n usernam: prettyR\n password: handsomeNoDoubt");
@@ -101,6 +127,7 @@ function check(){
     }
 }
 
-// document.addEventListener("DOMContentLoaded", function(){
-//     document.getElementById("user").innerHTML = userName_login
-// });
+// Added event listener to change the name.
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("user").innerHTML = window.localStorage.getItem("loggedinUser");
+});
