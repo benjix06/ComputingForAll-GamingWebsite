@@ -1,7 +1,9 @@
+// Assign values to top buttons and its color
 let loginBox  = document.getElementById("login");
 let registerBox  = document.getElementById("register");
 let topColorButton  = document.getElementById("button");
 
+// Create the register and login functions to relocate their location whenever the user click the button.
 function register(){
     loginBox.style.left="-380px"
     registerBox.style.left="-0px"
@@ -13,14 +15,15 @@ function login(){
     topColorButton.style.left = "0px"
 } 
 
-// Check the user when they click the register button.
 
-
+//  Initialzie the local storage.
 let storage = window.localStorage.users;
 
+// Declare the user inputs{user name, password, etc.} into an array.
 let usersArr;
 
-
+// If the storage is undefined(none) then assign the userArr as empty array(list)
+// also set the item for the dictionary
 if (storage === undefined) {
     usersArr = [];
     window.localStorage.setItem('users', JSON.stringify(usersArr));
@@ -29,6 +32,7 @@ if (storage === undefined) {
     usersArr = JSON.parse(storage);
 }
 
+// Create getInfo function to retrieve the information from the user whenever they click the register button
 function getInfo(){
 
     // Create the account
@@ -40,7 +44,6 @@ function getInfo(){
     // Regular expression to check the user input
     let checkUserName = /[a-zA-Z\d]{4,12}/g;
     let checkEmail = /[a-z0-9\.\_\%\+\-]+@[a-z0-9\.\-]+\.[a-z]{2,4}/g;
-    // let passWordCheck = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[\!\@\#\$\%\^\&\*\(\)\-\_\=\+]).{6,16}$/g;
     let passWordCheck = /[a-zA-Z\d]{4,12}/g;
 
 
@@ -82,6 +85,10 @@ function getInfo(){
 
 }
 
+
+// Create check() function to to check if the user input is valid when they click the login button
+// If it's valid then show them the new home page with their usename
+// Otherwise give an alert.
 function check(){
     
     var passWord = document.getElementById("passWord").value;
@@ -132,6 +139,7 @@ function check(){
 }
 
 // Added event listener to change the name.
+// Differentiate the login and register
 document.addEventListener("DOMContentLoaded", function(){
     let params = new URLSearchParams(document.location.search.substring(1));
     let click = params.get("click");
